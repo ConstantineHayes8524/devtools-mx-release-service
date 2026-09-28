@@ -1,0 +1,20 @@
+{
+  "name": "devtools-mx-release-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/http_server.ts",
+    "configure": "tsx scripts/configure_mail.ts",
+    "test": "node --import tsx --test test/mx_release_service.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

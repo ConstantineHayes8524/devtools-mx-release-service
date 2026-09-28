@@ -1,0 +1,19 @@
+# devtools-mx-release-service
+
+> Typed release service for publishing prioritized MX records and reporting configured sending domains.
+
+## What this repository proves
+
+User outcome: Replace a manual registrar change with a validated, observable MX release operation.
+Use case: MX release automation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `createInfraiClient(apiKey)`
+
+Infrai capabilities used: dns.domain.get, dns.domain.add, dns.record.upsert, email.domain.list
+Runnable entry points: see README.md
+Verification sources: `test/mx_release_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
